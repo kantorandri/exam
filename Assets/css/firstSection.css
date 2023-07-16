@@ -1,0 +1,124 @@
+@import "./style.css";
+
+.firstSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+.firstSectionLeft {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.headerImg {
+  width: 100%;
+  height: 267px;
+}
+
+.headerImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headerTitle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.headerBigTitle,
+.headerDescription {
+  height: 222px;
+}
+
+.headerBigTitle {
+  font-family: inter-ExtraBold;
+  margin: 25px 0;
+  width: 40%;
+  font-size: xx-large;
+}
+
+.headerDescription {
+  width: 60%;
+  padding-left: 50px;
+}
+
+.headerDescription > p {
+  margin-top: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  margin-bottom: 45px;
+  color: #666;
+}
+
+.headerDescription > button {
+  padding: 15px 20px;
+  background: #ff4b4b;
+  border: none;
+  color: #fff;
+  letter-spacing: 5px;
+  transition: 0.5s;
+}
+
+.headerDescription > button:hover {
+  cursor: pointer;
+  background: #05051d;
+}
+.firstSectionRight {
+  width: 32%;
+  padding: 30px 25px 0 25px;
+  background-color: #05051d;
+  color: #fff;
+}
+
+.firstSectionRight > h1 {
+  font-family: inter-ExtraBold;
+  font-size: 40px;
+  color: #e39529;
+}
+
+.firstSectionRight > div {
+  padding: 35px 0;
+}
+
+.firstSectionRight > div > h3 {
+  margin-bottom: 10px;
+}
+
+.firstSectionRight > div > p {
+  font-size: 15px;
+}
+@media screen and (max-width: 640px) {
+  .firstSection {
+    flex-direction: column;
+  }
+
+  .firstSectionLeft {
+    width: 100%;
+  }
+
+  .headerTitle {
+    flex-direction: column;
+  }
+
+  .headerBigTitle {
+    width: 100%;
+    height: auto;
+    margin: 25px 0 0;
+  }
+
+  .headerDescription {
+    width: 100%;
+    height: auto;
+    padding-left: 5px;
+  }
+
+  .firstSectionRight {
+    width: 100%;
+    margin: 55px 0 30px;
+  }
+}
